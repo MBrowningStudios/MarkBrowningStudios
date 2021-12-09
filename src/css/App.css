@@ -36,7 +36,7 @@
 
 @media (orientation: portrait) {
   .hero::before {
-    background: center/contain no-repeat url("../assets/IMG_1514_Small.JPG");
+    background: center/contain no-repeat url("../assets/IMG_Hero_Small.JPG");
   }
 }
 
