@@ -25,7 +25,8 @@
         url('../assets/IMG_Hero_Medium_Wide_Screen.jpg');
     }
     @media (orientation: portrait) {
-      background: center / contain no-repeat url('../assets/IMG_Hero_Small.JPG');
+      background: center / contain no-repeat
+        url('../assets/IMG_Hero_Portrait_Small.jpg');
     }
 
     //filter: brightness(80%);
