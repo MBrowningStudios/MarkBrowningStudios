@@ -1,0 +1,55 @@
+/** @format */
+
+.hero {
+  position: relative;
+  width: 100vw;
+  height: 25vh;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // background: center / contain no-repeat url('../images/IMG_Hero_Medium.JPG');
+
+    @media (orientation: landscape) {
+      background: center / contain no-repeat
+        url('../assets/IMG_Hero_Medium_Wide_Screen.jpg');
+    }
+    @media (orientation: portrait) {
+      background: center / contain no-repeat url('../assets/IMG_1514_Small.JPG');
+    }
+
+    //filter: brightness(80%);
+    //filter: grayscale(75%);
+  }
+
+  .hero-content {
+    position: relative;
+
+    .hero-title {
+      font-weight: 400;
+      font-size: 2rem;
+      letter-spacing: 0.25rem;
+      margin-bottom: 10px;
+      color: white;
+      text-align: center;
+    }
+
+    .hero-subtitle {
+      // font-family: var(--secondary-font-family);
+      letter-spacing: 0.25rem;
+      font-size: 1.5rem;
+      color: white;
+      text-align: center;
+    }
+  }
+}
